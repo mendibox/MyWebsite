@@ -1,29 +1,51 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   --background-color-primary: #1b1b32;
+  --background-color-secondary: #dba031;
 }
 
 body {
   background-color: var(--background-color-primary);
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
 header {
+  height: 4rem;
+  font-size: 1.3rem;
   display: flex;
-  flex-grow: 2;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--background-color-secondary);
 }
 
 #logo {
-  border: 1px solid red;
+  
   font-family: "Parisienne", cursive;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  font-size: 1.2rem;
+  padding-left: 0.5rem;
 }
 
 #main-menu {
-  border: 1px solid red;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+#main-menu a {
+  border: 0.2px dashed whitesmoke;
+  padding: 0 0.3rem;
 }
 
 #hero {

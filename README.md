@@ -6,10 +6,10 @@ Of course, this is a "work in progress" project and I will be modifying it throu
 
 # Technologies and tools used to develop this project
 
--HTML
--CSS
--Markdown
--Git
--Linux
--Visual Studio Code
--Google Chrome browser
+- HTML
+- CSS
+- Markdown
+- Git
+- Linux
+- Visual Studio Code
+- Google Chrome browser
