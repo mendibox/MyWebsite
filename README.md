@@ -10,6 +10,12 @@ Of course, this is a "work in progress" project and I will be modifying it throu
 - CSS
 - Markdown
 - Git
-- Linux
+- Linux sell
 - Visual Studio Code
 - Google Chrome browser
+
+# Learning resources
+
+- W3Schools
+- freeCodeCamp
+- Font Awesome

@@ -29,13 +29,38 @@ header {
 }
 
 #logo {
-  
   font-family: "Parisienne", cursive;
   font-weight: 500;
   font-style: normal;
   padding-left: 0.5rem;
 }
 
+.main-menu {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.5rem;
+}
+
+.main-menu-icon {
+  color: var(--background-color-secondary);
+}
+
+#hero {
+  width: 200px;
+}
+
+@media screen and (min-width: 480px) {
+  .main-menu {
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  .main-menu-icon{
+    display: none;
+  }
+
+}
+/*
 #main-menu {
   width: 100%;
   display: flex;
@@ -47,7 +72,4 @@ header {
   border: 0.2px dashed whitesmoke;
   padding: 0 0.3rem;
 }
-
-#hero {
-  width: 200px;
-}
+*/
