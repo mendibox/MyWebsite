@@ -19,9 +19,13 @@ a {
   text-decoration: none;
 }
 
-a:link, a:active, a:visited, a:hover {
+a:link, a:visited, a:hover {
   color: var(--background-color-secondary)
 
+}
+
+a:active {
+  background-color: var(--background-color-primary);
 }
 
 .top-nav-menu {
@@ -37,7 +41,7 @@ a:link, a:active, a:visited, a:hover {
   font-weight: 500;
   font-style: normal;
   font-size: 1.7rem;
-  padding: 0 0.5rem;
+  padding: 0 0.7rem;
   width: fit-content;
 }
 
