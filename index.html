@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juan Luis Mendiola</title>
+    <script src="./script.js"></script>
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,19 +20,17 @@
     <script src="https://kit.fontawesome.com/0291b03fa1.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header class="top-nav-menu">
       <div id="logo">mendibox</div>
-      <nav class="main-menu">
-        <a href=""><i class="fa-solid fa-bars main-menu-icon"></i></a>
+      <nav id="main-menu-items">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#more">More</a>
+        <a href="#blog">Blog</a>
       </nav>
-      <!--
-      <nav id="main-menu">
-        <a class="menu-item" href="#">Hello</a>
-        <a class="menu-item" href="#experience">Experience</a>
-        <a class="menu-item" href="#projects">Projects</a>
-        <a class="menu-item" href="#more">More</a>
-      </nav>
-      -->
+      <a href="javascript:void(0);" class="main-menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </header>
     <main>
       <p>Hello there!</p>
@@ -45,7 +44,10 @@
     </main>
     <footer>
       <p>&copy; 2024 Juan Luis Mendiola Esquivel</p>
-      <p>Version 0.3</p>
+      <p>Version 0.5</p>
+
+      topnav >> top-nav-menu
+      myLinks >> main-menu
     </footer>
   </body>
 </html>

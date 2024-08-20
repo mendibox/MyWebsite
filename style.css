@@ -17,14 +17,18 @@ body {
 
 a {
   text-decoration: none;
-  color: antiquewhite;
 }
 
-header {
-  height: 4rem;
+a:link, a:active, a:visited, a:hover {
+  color: var(--background-color-secondary)
+
+}
+
+.top-nav-menu {
+  overflow: hidden;
+  position: relative;
+  background-color: #333;
   font-size: 1.3rem;
-  display: flex;
-  align-items: center;
   border-bottom: 0.1rem solid var(--background-color-secondary);
 }
 
@@ -32,44 +36,28 @@ header {
   font-family: "Parisienne", cursive;
   font-weight: 500;
   font-style: normal;
-  padding-left: 0.5rem;
+  font-size: 1.7rem;
+  padding: 0 0.5rem;
+  width: fit-content;
 }
 
-.main-menu {
-  width: 100vw;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 0.5rem;
+.top-nav-menu #main-menu-items {
+  display: none;
+  color: var(--background-color-secondary)
 }
 
-.main-menu-icon {
-  color: var(--background-color-secondary);
+.top-nav-menu a {
+  display: block;
 }
+
+.top-nav-menu a.main-menu-icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 
 #hero {
-  width: 200px;
+  width: 100vw;
 }
-
-@media screen and (min-width: 480px) {
-  .main-menu {
-    justify-content: center;
-    gap: 0.3rem;
-  }
-  .main-menu-icon{
-    display: none;
-  }
-
-}
-/*
-#main-menu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 0.3rem;
-}
-
-#main-menu a {
-  border: 0.2px dashed whitesmoke;
-  padding: 0 0.3rem;
-}
-*/
