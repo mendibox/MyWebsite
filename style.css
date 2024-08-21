@@ -26,12 +26,11 @@ a:hover {
   color: var(--background-color-secondary);
 }
 
-.top-nav-menu {
+.top-nav-container {
   overflow: hidden;
   position: relative;
-  background-color: #333;
+  background-color: var(--background-color-primary);
   font-size: 1.3rem;
-
 }
 
 #logo {
@@ -43,36 +42,44 @@ a:hover {
   width: fit-content;
 }
 
-.top-nav-menu #main-menu-items {
-  display: none;
-  color: var(--background-color-secondary);
-}
-
-.top-nav-menu a {
-  display: block;
-  padding: 0 0.5rem;
-}
-
-.top-nav-menu a.main-menu-icon {
+.top-nav-container a.menu-icon {
+  border: 1px solid red;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
   font-size: 2rem;
+  /*padding: 1px;*/
 }
 
-#main-menu-items a {
+i {
+  border: 1px solid red;
+}
+
+.top-nav-container #menu-container {
+  display: none;
+  color: var(--background-color-secondary);
+}
+
+.top-nav-container a {
+  display: block;
+  padding: 0 0.5rem;
+}
+
+
+
+#menu-container a {
   border-bottom: 0.1rem solid var(--background-color-secondary);
 }
 
-#main-menu-items a:first-of-type {
+#menu-container a:first-of-type {
   border-top: 0.1rem solid var(--background-color-secondary);
 }
 
-#main-menu-items a:last-of-type {
+#menu-container a:last-of-type {
   border-bottom: 0.1rem solid var(--background-color-secondary);
 }
 
 #hero {
-  width: 100vw;
+  width: 80vw;
 }

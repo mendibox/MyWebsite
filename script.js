@@ -1,5 +1,5 @@
 function toggleMenu() {
-    let mainMenu = document.getElementById('main-menu-items');
+    let mainMenu = document.getElementById('menu-container');
     if (mainMenu.style.display === 'block') {
         mainMenu.style.display = 'none';
     } else {
