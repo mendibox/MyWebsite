@@ -19,13 +19,11 @@ a {
   text-decoration: none;
 }
 
-a:link, a:visited, a:hover {
-  color: var(--background-color-secondary)
-
-}
-
-a:active {
-  background-color: var(--background-color-primary);
+a:link,
+a:active,
+a:visited,
+a:hover {
+  color: var(--background-color-secondary);
 }
 
 .top-nav-menu {
@@ -33,25 +31,26 @@ a:active {
   position: relative;
   background-color: #333;
   font-size: 1.3rem;
-  border-bottom: 0.1rem solid var(--background-color-secondary);
+
 }
 
 #logo {
   font-family: "Parisienne", cursive;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.7rem;
-  padding: 0 0.7rem;
+  font-size: 2rem;
+  padding: 0 0.5rem;
   width: fit-content;
 }
 
 .top-nav-menu #main-menu-items {
   display: none;
-  color: var(--background-color-secondary)
+  color: var(--background-color-secondary);
 }
 
 .top-nav-menu a {
   display: block;
+  padding: 0 0.5rem;
 }
 
 .top-nav-menu a.main-menu-icon {
@@ -59,8 +58,20 @@ a:active {
   position: absolute;
   right: 0;
   top: 0;
+  font-size: 2rem;
 }
 
+#main-menu-items a {
+  border-bottom: 0.1rem solid var(--background-color-secondary);
+}
+
+#main-menu-items a:first-of-type {
+  border-top: 0.1rem solid var(--background-color-secondary);
+}
+
+#main-menu-items a:last-of-type {
+  border-bottom: 0.1rem solid var(--background-color-secondary);
+}
 
 #hero {
   width: 100vw;
