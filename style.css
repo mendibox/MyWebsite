@@ -43,17 +43,12 @@ a:hover {
 }
 
 .top-nav-container a.menu-icon {
-  border: 1px solid red;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
   font-size: 2rem;
   /*padding: 1px;*/
-}
-
-i {
-  border: 1px solid red;
 }
 
 .top-nav-container #menu-container {
@@ -63,7 +58,7 @@ i {
 
 .top-nav-container a {
   display: block;
-  padding: 0 0.5rem;
+  padding: 0.2rem 0.5rem;
 }
 
 
