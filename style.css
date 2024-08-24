@@ -48,7 +48,6 @@ a:hover {
   right: 0;
   top: 0;
   font-size: 2rem;
-  /*padding: 1px;*/
 }
 
 .top-nav-container #menu-container {
@@ -58,7 +57,7 @@ a:hover {
 
 .top-nav-container a {
   display: block;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 
