@@ -33,19 +33,20 @@ a:hover {
   font-size: 1.3rem;
 }
 
-#logo {
+.logo {
   font-family: "Parisienne", cursive;
   font-weight: 500;
   font-style: normal;
   font-size: 2rem;
   padding: 0 0.5rem;
-  width: fit-content;
+  width: 100%;
+  text-align: end;
 }
 
 .top-nav-container a.menu-icon {
   display: block;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   font-size: 2rem;
 }
@@ -76,4 +77,24 @@ a:hover {
 
 #hero {
   width: 80vw;
+}
+
+.encabezado {
+  border: 1px solid red;
+  display: flex;
+}
+
+.icono-menu {
+  border: 1px solid blue;
+}
+
+.contenedor-menu {
+  border: 1px solid green;  
+  font-size: 0.4rem;
+  display: none;
+}
+
+.logotipo {
+  border: 1px solid yellow;
+  width: 5rem;
 }

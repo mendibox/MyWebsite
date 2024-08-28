@@ -10,7 +10,7 @@ Of course, this is a "work in progress" project and I will be modifying it throu
 - CSS
 - Markdown
 - Git
-- Linux sell
+- Linux shell
 - Visual Studio Code
 - Google Chrome browser
 
