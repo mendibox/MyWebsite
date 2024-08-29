@@ -127,6 +127,12 @@ i {
   align-self: stretch;
 }
 
+/*My phone screen size*/
+
+hr {
+  width: 300px;
+}
+
 /*Media queries*/
 
 @media screen and (min-width: 300px) {
