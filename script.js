@@ -7,10 +7,12 @@ function toggleMenu() {
     }
 }
 
-function savedLiters () {
-    let showers = 6;
-    let savedWater = 100;
-    let result = showers * savedWater;
+function showers () {
+    let showersTaken = 6; //Real number of showers taken since August 2024
+    let litersSaved = 100; //Need confirmation
+    let result = showersTaken * litersSaved;
     let element = document.getElementById('liters');
     element.innerHTML = result;
 }
+
+window.addEventListener('load', showers)

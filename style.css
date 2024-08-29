@@ -79,22 +79,66 @@ a:hover {
   width: 80vw;
 }
 
+/*New main menu*/
 .encabezado {
   border: 1px solid red;
   display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .icono-menu {
   border: 1px solid blue;
 }
 
+i {
+  vertical-align: middle;
+}
+
 .contenedor-menu {
   border: 1px solid green;  
-  font-size: 0.4rem;
   display: none;
 }
 
 .logotipo {
   border: 1px solid yellow;
-  width: 5rem;
+  width: 15vw;
+  justify-content: flex-end;
+}
+
+/*Practicing*/
+.main-container {
+  border: 1px solid yellow;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  height: 15em;
+}
+
+.items {
+  background-color: red;
+  width: 60vw;
+  margin-right: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+
+.target-two {
+  align-self: stretch;
+}
+
+/*Media queries*/
+
+@media screen and (min-width: 300px) {
+
+  .icono-menu {
+    display: none;
+  }
+
+  .contenedor-menu {
+    display: unset;
+    width: 95vw;
+    font-size: 2vw;
+    text-align: center;
+  }
 }
