@@ -136,7 +136,7 @@ hr {
 
 /*Media queries*/
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 321px) {
 
   .icono-menu {
     display: none;
