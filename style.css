@@ -130,8 +130,9 @@ i {
 /*My phone screen size*/
 
 hr {
-  width: 355px;
+  width: 354px;
   height: 5px;
+  border-right: 1px solid red;
 }
 
 /*Media queries*/
