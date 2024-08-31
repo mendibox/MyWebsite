@@ -130,14 +130,14 @@ i {
 /*My phone screen size*/
 
 hr {
-  width: 358px;
+  width: 360px;
   height: 5px;
   border-right: 1px solid red;
 }
 
 /*Media queries*/
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 360px) {
 
   .icono-menu {
     display: none;
