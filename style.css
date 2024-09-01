@@ -87,7 +87,7 @@ a:hover {
   margin-top: 10px;
 }
 
-.icono-menu {
+#icono-menu {
   border: 1px solid blue;
 }
 
@@ -98,6 +98,11 @@ i {
 .contenedor-menu {
   border: 1px solid green;  
   display: none;
+}
+
+.contenedor-menu a {
+  display: block;
+  border-bottom: 1px solid var(--background-color-secondary);
 }
 
 .logotipo {
@@ -127,17 +132,10 @@ i {
   align-self: stretch;
 }
 
-/*My phone screen size*/
-
-hr {
-  width: 360px;
-  height: 5px;
-  border-right: 1px solid red;
-}
-
+/*My phone screen size is 360px width*/
 /*Media queries*/
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 361px) {
 
   .icono-menu {
     display: none;

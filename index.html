@@ -44,20 +44,20 @@
         the main front-end technologies in order to apply to a job where I can
         grow as a person and professional software developer.
       </p>
-      <img id="hero" src="./img/myPicture.jpg" alt="A picture of Juan Luis" />
+      <!--<img id="hero" src="./img/myPicture.jpg" alt="A picture of Juan Luis" />-->
       <header class="encabezado">
-        <a href="javascript:void(0);" class="icono-menu" onclick="toggleMenu()">
+        <a href="javascript:void(0);" id="icono-menu" class="icono-menu" onclick="activarMenu()">
           <i class="fa-solid fa-bars"></i>
         </a>
-        <nav class="contenedor-menu">
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#changelog">Changelog</a>
-          <a href="#more">More</a>
-          <a href="#blog">Blog</a>
-        </nav>
         <div class="logotipo"></div>
       </header>
+      <nav id="contenedor-menu" class="contenedor-menu">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#changelog">Changelog</a>
+        <a href="#more">More</a>
+        <a href="#blog">Blog</a>
+      </nav>
     </main>
     <!--
       <div class="main-container">
@@ -73,11 +73,9 @@
         <div class="items target-two">10</div>
       </div>
     -->
-      <br>
-      <hr>
     <footer>
       <p>&copy; 2024 Juan Luis Mendiola Esquivel</p>
-      <p>Version 360</p>
+      <p>Version 0.0</p>
       <p>Water saved: <span id="liters"></span> Liters</p>
     </footer>
   </body>

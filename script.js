@@ -7,6 +7,15 @@ function toggleMenu() {
     }
 }
 
+function activarMenu(){
+    let iconoMenu = document.getElementById('contenedor-menu');
+    if (iconoMenu.style.display === 'block') {
+        iconoMenu.style.display = 'none';
+    } else {
+        iconoMenu.style.display = 'block';
+    }
+}
+
 function showers () {
     let showersTaken = 7; //Real number of showers taken since August 2024
     let unconsciousLiters = 93; //Average liters quantity in a single shower without any kind of consciousness
