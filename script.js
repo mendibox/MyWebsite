@@ -19,7 +19,7 @@ function activarMenu(){
 function showers () {
     let showersTaken = 7; //Real number of showers taken since August 2024
     let unconsciousLiters = 93; //Average liters quantity in a single shower without any kind of consciousness
-    let semiConsciousLiters = 0; //Pending
+    let semiConsciousLiters = 41; //Mid consciousness
     let consciousLiters = 20 //Liters spend with an extreme consciousness
     let result = (unconsciousLiters - consciousLiters) * showersTaken;
     let element = document.getElementById('liters');
