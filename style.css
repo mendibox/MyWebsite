@@ -1,14 +1,17 @@
+:root {
+  --color-primary: #1b1b32;
+  --color-secondary: #3f0071;
+  --color-tertiary: #150050;
+  --color-quarterly: #fb2576;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
-:root {
-  --background-color-primary: #1b1b32;
-  --background-color-secondary: #dba031;
-}
 
 body {
-  background-color: var(--background-color-primary);
+  background-color: var(--color-primary);
   font-family: "Gilda Display", serif;
   font-weight: 400;
   font-style: normal;
@@ -23,7 +26,7 @@ a:link,
 a:active,
 a:visited,
 a:hover {
-  color: var(--background-color-secondary);
+  color: white;
 }
 
 .top-nav-container {
@@ -37,28 +40,18 @@ a:hover {
 
 .menu-container {
   display: none;
-  color: var(--background-color-secondary);
+  color: white;
 }
 
 .menu-container a {
   display: block;
+  font-weight: 600;
   padding: 0.5rem;
-  border-bottom: 0.1rem solid var(--background-color-secondary);
+  border-bottom: 0.1rem solid var(--color-quarterly);
 }
 
 .menu-container a:first-of-type {
-  border-top: 0.1rem solid var(--background-color-secondary);
-}
-
-.logo {
-  font-family: "Parisienne", cursive;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 2rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: var(--background-color-secondary);
+  border-top: 0.1rem solid var(--color-quarterly);
 }
 
 #hero {
@@ -88,20 +81,40 @@ a:hover {
 /*My phone screen size is 360px width*/
 /*Media queries*/
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 481px) {
   .menu-icon {
     display: none;
   }
+
+  .top-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid var(--color-quarterly);
+    margin-bottom: 25px;
+    box-shadow: 0 3px 15px 1px var(--color-quarterly);
+  }
   .menu-container {
-    display: inline-block;
-    text-align: center;
+    display: inline;
+    font-size: 1.29rem;
+    font-weight: 900;
   }
   .menu-container a {
-    display: inline-block;
-    font-size: 0.69em;
-    padding: 0.2rem;
+    display: inline;
+    border: none;
   }
   .menu-container a:first-of-type {
     border-top: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  a:hover {
+    border-top: 3px solid var(--color-quarterly);
+  }
+
+  .menu-container a:first-of-type:hover {
+    border-top: 3px solid var(--color-quarterly);
   }
 }
