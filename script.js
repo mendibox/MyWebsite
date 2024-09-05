@@ -7,6 +7,31 @@ function toggleMenu() {
     }
 }
 
+function toggleHero() {
+    var about = document.getElementById('about');
+    var aboutStyles = window.getComputedStyle(about);
+    var aboutWidth = aboutStyles.getPropertyValue('width');
+    let heroImage = document.getElementById('hero');
+    //let heroStyles = window.getComputedStyle(heroImage);
+    //let heroAttribute = heroImage.getAttribute('src');
+    
+    
+    //alert(aboutWidth);
+    if(aboutWidth >= '481px'){
+        heroImage.setAttribute('src', './img/myPicture.jpg');
+        //eroStyles.setProperty('width', 'fit-content');
+        //aboutStyles.setProperty()
+    } else if (aboutWidth <= '480px'){
+        heroImage.setAttribute('src', './img/mine.png');
+    }
+    /*
+    
+    
+    if(heroAttribute === './img/mine.png'){
+        
+    }*/
+}
+
 function activarMenu(){
     let iconoMenu = document.getElementById('contenedor-menu');
     if (iconoMenu.style.display === 'block') {

@@ -35,7 +35,8 @@ a:hover {
 
 .menu-icon {
   font-size: 2.5rem;
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
+  border: 1px solid red;
 }
 
 .menu-container {
@@ -54,30 +55,44 @@ a:hover {
   border-top: 0.1rem solid var(--color-quarterly);
 }
 
-#hero {
-  width: 100vw;
+.grid-container {
+  border: 1px solid red;
+  display: grid;
 }
 
-/*Practicing
-.main-container {
-  border: 1px solid yellow;
-  margin-top: 1rem;
+.about-subsection {
+  display: flex;
+}
+
+.hero-container {
+  border: 1px solid red;
   display: flex;
   align-items: center;
-  height: 15em;
 }
 
-.items {
-  background-color: red;
-  width: 60vw;
-  margin-right: 0.1em;
-  margin-bottom: 0.1em;
+.hero {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid var(--color-quarterly);
 }
 
-.target-two {
-  align-self: stretch;
+.about-container {
+  border: 1px solid red;
+  margin: 0.5rem 0 0 0.5rem;
 }
-*/
+
+
+
+/*Practicing*/
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 36fr;
+}
+
 /*My phone screen size is 360px width*/
 /*Media queries*/
 
@@ -107,6 +122,22 @@ a:hover {
   .menu-container a:first-of-type {
     border-top: none;
   }
+
+  .grid-container {
+    grid-template-columns: 25vw 75vw;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+  }
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+  .hero {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -116,5 +147,15 @@ a:hover {
 
   .menu-container a:first-of-type:hover {
     border-top: 3px solid var(--color-quarterly);
+  }
+  /*Practicing*/
+
+  .items {
+    background-color: red;
+    border: 1px solid blacK;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
