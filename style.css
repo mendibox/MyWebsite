@@ -60,14 +60,9 @@ a:hover {
   display: grid;
 }
 
-.about-subsection {
-  display: flex;
-}
-
-.hero-container {
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
+.about {
+  border: 1px solid yellow;
+  margin-left: 0.5rem;
 }
 
 .hero {
@@ -76,14 +71,8 @@ a:hover {
   background-color: white;
   border-radius: 50px;
   border: 2px solid var(--color-quarterly);
+  display: inline;
 }
-
-.about-container {
-  border: 1px solid red;
-  margin: 0.5rem 0 0 0.5rem;
-}
-
-
 
 /*Practicing*/
 
@@ -124,14 +113,14 @@ a:hover {
   }
 
   .grid-container {
-    grid-template-columns: 25vw 75vw;
+    grid-template-columns: 25vw 50vw;
     /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
   }
 
-.about {
-  display: flex;
-  justify-content: center;
-}
+  .about {
+    display: flex;
+    justify-content: center;
+  }
   .hero {
     width: 100%;
     height: 100%;
