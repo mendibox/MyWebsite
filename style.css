@@ -30,18 +30,23 @@ a:hover {
 }
 
 .top-nav-container {
+  width: 100vw;
+  background-color: var(--color-primary);
   padding: 0.5rem;
+  box-shadow: 0 3px 15px 1px var(--color-quarterly);
+  position: fixed;
+  top: 0;
 }
 
 .menu-icon {
   font-size: 2.5rem;
   padding: 0 0.5rem;
-  border: 1px solid red;
 }
 
 .menu-container {
-  display: none;
   color: white;
+  display: none;
+  height: 100vh;
 }
 
 .menu-container a {
@@ -55,14 +60,25 @@ a:hover {
   border-top: 0.1rem solid var(--color-quarterly);
 }
 
-.grid-container {
-  border: 1px solid red;
-  display: grid;
+.main-container {
+  margin-top: 63px;
 }
 
 .about {
-  border: 1px solid yellow;
   margin-left: 0.5rem;
+  display: flex;
+  margin: 20px 0;
+}
+
+section:not(.about) {
+  height: 200px;
+  border: 1px solid yellow;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
 }
 
 .hero {
@@ -70,8 +86,10 @@ a:hover {
   height: 100px;
   background-color: white;
   border-radius: 50px;
-  border: 2px solid var(--color-quarterly);
-  display: inline;
+}
+
+.first-message {
+  padding: 20px 10px;
 }
 
 /*Practicing*/
