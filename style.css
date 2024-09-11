@@ -51,7 +51,8 @@ a:hover {
 
 .menu-container a {
   display: block;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
   padding: 0.5rem;
   border-bottom: 0.1rem solid var(--color-quarterly);
 }
