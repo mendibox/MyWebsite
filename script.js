@@ -8,13 +8,15 @@ function toggleMenu() {
 }
 
 function toggleHero() {
-    var heroElement = document.getElementById('hero');
-    var heroStyles = window.getComputedStyle(heroElement);
-    var heroWidth = heroStyles.getPropertyValue('width');
+    const containerElement = document.getElementById('hero-container');
+    const containerStyles = window.getComputedStyle(containerElement);
+    const containerProperty = containerStyles.getPropertyValue('width');
+
+    alert(containerProperty)
+
+
     let heroSource = document.getElementById('hero');
-    if (heroWidth <= '109px') {
-        heroSource.setAttribute('src', './img/mine.png');
-    } else {
+    if (containerProperty >= '117px') {
         heroSource.setAttribute('src', './img/myPicture.jpg');
     }
 }
