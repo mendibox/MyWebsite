@@ -90,7 +90,7 @@ section:not(.about) {
 }
 
 .first-message {
-  
+  padding: 0.6rem;
 }
 
 /*Practicing*/
@@ -128,11 +128,11 @@ section:not(.about) {
     border-top: none;
   }
   .about{
-
+    margin-left: unset;
   }
   .hero-container{
     border: 1px solid blueviolet;
-    width: 300px;
+    width: 900px;
     padding: 0;
     display: unset;
   }
@@ -140,6 +140,9 @@ section:not(.about) {
     width: 100%;
     height: 100%;
     border-radius: unset;
+  }
+
+  .first-message {
   }
 }
 
@@ -150,6 +153,9 @@ section:not(.about) {
 
   .menu-container a:first-of-type:hover {
     border-top: 3px solid var(--color-quarterly);
+  }
+  .hero-container{
+    height: 86vh;
   }
 
   /*Practicing*/
