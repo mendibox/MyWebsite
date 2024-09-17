@@ -29,6 +29,7 @@ a:hover {
   color: white;
 }
 
+/*Top main menu*/
 .top-nav-container {
   width: 100vw;
   background-color: var(--color-primary);
@@ -61,17 +62,20 @@ a:hover {
   border-top: 0.1rem solid var(--color-quarterly);
 }
 
+/*Main container*/
+
 .main-container {
   margin-top: min(5.3rem);
 }
 
+/*About section*/
+
 .about {
-  border: 1px solid red;
   display: flex;
   margin-left: 0.5rem;
 }
 
-section:not(.about) {
+section:not(.about, .changelog) {
   height: 200px;
   border: 1px solid yellow;
 }
@@ -91,6 +95,32 @@ section:not(.about) {
 
 .first-message {
   padding: 0.6rem;
+}
+
+/*Projects section*/
+
+.projects {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.item {
+  border: 1px solid red;
+  width: 280px;
+}
+
+/*Changelog section*/
+
+.changelog i {
+}
+
+.vertical-line {
+  border-left: 2px solid rebeccapurple;
+  height: 80px;
+  margin-left: 0.4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.3rem;
 }
 
 /*Practicing*/
@@ -143,6 +173,8 @@ section:not(.about) {
   }
 
   .first-message {
+    font-size: 2vw;
+    
   }
 }
 
@@ -167,5 +199,9 @@ section:not(.about) {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .first-message {
+    
+    
   }
 }
