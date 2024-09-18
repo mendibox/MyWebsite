@@ -66,13 +66,12 @@ a:hover {
 
 .main-container {
   margin-top: min(5.3rem);
+  padding: 0 1rem;
 }
 
 /*About section*/
 
 .about {
-  display: flex;
-  margin-left: 0.5rem;
 }
 
 section:not(.about, .changelog) {
@@ -80,21 +79,23 @@ section:not(.about, .changelog) {
   border: 1px solid yellow;
 }
 
-.hero-container {
-  display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
+.first-message {
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.tongue {
+  position: relative;
+  right: 5px;
+  top: 10px;
 }
 
 .hero {
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.first-message {
-  padding: 0.6rem;
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid var(--color-secondary);
 }
 
 /*Projects section*/
@@ -121,6 +122,15 @@ section:not(.about, .changelog) {
   display: flex;
   align-items: center;
   padding-left: 0.3rem;
+}
+
+/*Experience section*/
+
+.experience {
+  background-image: url("./img/microsoft.png");
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*Practicing*/
