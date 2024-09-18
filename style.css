@@ -3,6 +3,7 @@
   --color-secondary: #3f0071;
   --color-tertiary: #150050;
   --color-quarterly: #fb2576;
+  --color-contrast: #fff;
 }
 
 * {
@@ -80,16 +81,29 @@ section:not(.about, .changelog) {
 }
 
 .first-message {
-  padding: 0.6rem;
   font-size: 1.5rem;
   margin-bottom: 3rem;
   text-align: justify;
 }
 
-.tongue {
-  position: relative;
-  right: 5px;
-  top: 10px;
+.colored {
+  color: var(--color-quarterly);
+}
+
+.button-resume {
+  display: block;
+  margin: 1.6rem auto;
+  width: 200px;
+  height: 55px;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-secondary);
+  color: var(--color-contrast);
+  font-size: 1rem;
+  font-weight: 900;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: var(--color-quarterly);
 }
 
 .hero {
