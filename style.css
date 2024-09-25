@@ -1,7 +1,7 @@
 :root {
   --color-primary: #1b1b32;
   --color-secondary: #3f0071;
-  --color-tertiary: #150050;
+  --color-tertiary: #04A9EA;
   --color-quarterly: #fb2576;
   --color-contrast: #fff;
 }
@@ -66,8 +66,17 @@ a:hover {
 /*Main container*/
 
 .main-container {
-  margin-top: min(5.3rem);
+  margin-bottom: 20px;
+  margin-top: 64px;
   padding: 0 1rem;
+}
+
+/*Sections*/
+
+section {
+  border: 1px solid yellow;
+  padding: 2rem 0;
+  
 }
 
 /*About section*/
@@ -77,7 +86,7 @@ a:hover {
 
 section:not(.about, .changelog) {
   height: 200px;
-  border: 1px solid yellow;
+  
 }
 
 .first-message {
@@ -108,20 +117,22 @@ section:not(.about, .changelog) {
 
 .hero {
   width: 100%;
-  border-radius: 15px;
-  border: 2px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+  background-image: url(./img/binary_background.jpg);
+  border-radius: 20px;
+  
 }
 
 /*Projects section*/
 
 .projects {
   display: flex;
-  overflow-x: hidden;
+  flex-direction: row-reverse;
 }
 
 .item {
   border: 1px solid red;
-  width: 280px;
+  width: 400px;
 }
 
 /*Changelog section*/
@@ -176,17 +187,20 @@ section:not(.about, .changelog) {
   .menu-container a {
     display: inline;
     border: none;
-    font-size: 1.29rem;
+    font-size: 1.25rem;
   }
   .menu-container a:first-of-type {
     border-top: none;
   }
   .about{
     margin-left: unset;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0;
   }
   .hero-container{
     border: 1px solid blueviolet;
-    width: 900px;
+    width: 33.33vw;
     padding: 0;
     display: unset;
   }
@@ -198,11 +212,11 @@ section:not(.about, .changelog) {
 
   .first-message {
     font-size: 2vw;
-    
+    width: 66.66vw;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   a:hover {
     border-top: 3px solid var(--color-quarterly);
   }
@@ -224,8 +238,13 @@ section:not(.about, .changelog) {
     justify-content: center;
     align-items: center;
   }
+
+  .about {
+
+
+  }
   .first-message {
-    
+    padding: 2rem;
     
   }
 }
