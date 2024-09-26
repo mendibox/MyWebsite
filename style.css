@@ -14,7 +14,7 @@
 body {
   background-color: var(--color-primary);
   font-family: "Gilda Display", serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   color: white;
 }
@@ -66,23 +66,19 @@ a:hover {
 /*Main container*/
 
 .main-container {
-  margin-bottom: 20px;
+  border: 1px solid yellow;
   margin-top: 64px;
+  margin-bottom: 20px;
   padding: 0 1rem;
 }
 
 /*Sections*/
 
 section {
-  border: 1px solid yellow;
   padding: 2rem 0;
-  
 }
 
 /*About section*/
-
-.about {
-}
 
 section:not(.about, .changelog) {
   height: 200px;
@@ -118,16 +114,15 @@ section:not(.about, .changelog) {
 .hero {
   width: 100%;
   background-color: var(--color-secondary);
-  background-image: url(./img/binary_background.jpg);
-  border-radius: 20px;
-  
+  background-image: url(./img/hero_bg.jpg);
+  border-radius: 15px;
 }
 
 /*Projects section*/
 
 .projects {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .item {
@@ -136,9 +131,6 @@ section:not(.about, .changelog) {
 }
 
 /*Changelog section*/
-
-.changelog i {
-}
 
 .vertical-line {
   border-left: 2px solid rebeccapurple;
@@ -166,7 +158,7 @@ section:not(.about, .changelog) {
   grid-template-rows: 36fr;
 }
 
-/*My phone screen size is 360px width*/
+/*My phone screen size is 360px x 720px width*/
 /*Media queries*/
 
 @media screen and (min-width: 481px) {
@@ -181,42 +173,46 @@ section:not(.about, .changelog) {
   }
   .menu-container {
     display: inline;
-    font-weight: 900;
     height: fit-content;
   }
   .menu-container a {
     display: inline;
     border: none;
     font-size: 1.25rem;
+    font-weight: 900;
   }
   .menu-container a:first-of-type {
     border-top: none;
   }
+  .main-container{
+    padding: 0;
+  }
   .about{
-    margin-left: unset;
     display: flex;
-    flex-direction: row-reverse;
-    padding-top: 0;
+    flex-direction: row;
+    padding: 0;
+    background-image: url("./img/hero_bg.jpg");
   }
   .hero-container{
-    border: 1px solid blueviolet;
-    width: 33.33vw;
+    width: 40vw;
     padding: 0;
-    display: unset;
+    display: flex;
+    align-items: end;
   }
   .hero {
-    width: 100%;
-    height: 100%;
+    background: unset;
     border-radius: unset;
+    height: 60%;
   }
-
   .first-message {
-    font-size: 2vw;
-    width: 66.66vw;
+    font-size: 3.2vw;
+    width: 60vw;
+    padding: 35px 15px 15px;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   a:hover {
     border-top: 3px solid var(--color-quarterly);
   }
@@ -237,11 +233,6 @@ section:not(.about, .changelog) {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .about {
-
-
   }
   .first-message {
     padding: 2rem;

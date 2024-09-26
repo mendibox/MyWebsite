@@ -8,7 +8,7 @@ function toggleMenu() {
         mainMenu.style.display = 'block';
     }
 }
-
+/*
 function toggleHero() {
     const containerElement = document.getElementById('hero-container');
     const containerStyles = window.getComputedStyle(containerElement);
@@ -19,7 +19,7 @@ function toggleHero() {
     } else if (containerProperty >= '117px') {
         heroSource.setAttribute('src', './img/myPicture.jpg');
     }
-}
+}*/
 
 function activarMenu() {
     let iconoMenu = document.getElementById('contenedor-menu');
