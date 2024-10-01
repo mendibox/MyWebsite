@@ -126,8 +126,9 @@ section:not(.about, .changelog) {
 }
 
 .item {
+  display: block;
   border: 1px solid red;
-  width: 400px;
+  width: 800px;
 }
 
 /*Changelog section*/
@@ -191,7 +192,7 @@ section:not(.about, .changelog) {
     display: flex;
     flex-direction: row;
     padding: 0;
-    background-image: url("./img/hero_bg.jpg");
+
   }
   .hero-container{
     border: 1px solid red;
@@ -199,6 +200,7 @@ section:not(.about, .changelog) {
     padding: 0;
     display: flex;
     align-items: end;
+    background-image: url("./img/hero_bg.jpg");
   }
   .hero {
     background: unset;
