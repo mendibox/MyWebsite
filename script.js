@@ -37,13 +37,18 @@ function showSlides(n) {
 }
 
 
-function toggleMenu() {
+function toggleMainMenu() {
     let mainMenu = document.getElementById('menu-container');
     if (mainMenu.style.display === 'block') {
         mainMenu.style.display = 'none';
     } else {
         mainMenu.style.display = 'block';
     }
+}
+
+function closeMainMenu() {
+    let menuOption = document.getElementById('menu-container')
+
 }
 
 function showers() {
