@@ -137,7 +137,6 @@ section {
 
 .previous,
 .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
@@ -153,6 +152,10 @@ section {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.next:hover {
+  background-color: #000;
 }
 
 /*Fading animation*/
@@ -263,6 +266,10 @@ section {
     border-top: 3px solid var(--color-quarterly);
   }
   /*Next and previous buttons*/
+  .previous,
+  .next {
+    cursor: pointer;
+  }
   .previous:hover,
   .next:hover {
   background-color: var(--color-primary);
