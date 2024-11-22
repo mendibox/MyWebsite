@@ -1,3 +1,19 @@
+let projectTitle = document.getElementById('project-title');
+
+projectTitle = ['One', 'Two', 'Three'];
+
+
+
+
+
+
+
+
+
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -22,6 +38,7 @@ function showSlides(n) {
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        projectTitle[i].innerText = "Yeah!";
     }
     slides[slideIndex - 1].style.display = "block";
 }
