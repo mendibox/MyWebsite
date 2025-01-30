@@ -127,14 +127,26 @@ section {
   display: none;
 }
 
+.slides h3 {
+  border: 1px solid red;
+  padding: 0.5rem 0;
+}
+
+.slides p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
 #project-title {
+  border: 1px solid red;
   text-align: center;
+  padding: 1rem;
 }
 
 .mini {
   width: 100%;
   height: 500px;
-  background-color: #fb2576;
+  background-color: #267A3E;
 }
 
 .mini img {
@@ -148,6 +160,9 @@ section {
   background-color: #3e00719a;
   text-align: center;
   font-size: 2rem;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*Next and previous buttons*/
