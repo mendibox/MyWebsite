@@ -1,4 +1,10 @@
-
+:root {
+  --color-primary: #1b1b32;
+  --color-secondary: #3f0071;
+  --color-tertiary: #04A9EA;
+  --color-quarterly: #fb2576;
+  --color-contrast: #fff;
+}
 
 * {
   margin: 0;
