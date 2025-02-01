@@ -5,12 +5,12 @@
   --color-quarterly: #fb2576;
   --color-contrast: #fff;
 }
-
+/*
 * {
   margin: 0;
   box-sizing: border-box;
 }
-
+*/
 body {
   background-color: var(--color-primary);
   font-family: "Gilda Display", serif;
