@@ -1,7 +1,7 @@
 :root {
   --color-primary: #1b1b32;
   --color-secondary: #3f0071;
-  --color-tertiary: #04A9EA;
+  --color-tertiary: #04a9ea;
   --color-quarterly: #fb2576;
   --color-contrast: #fff;
 }
@@ -41,18 +41,18 @@ a:hover {
   z-index: 999;
 }
 
-.menu-icon {
+#menu-icon {
   font-size: 2.5rem;
   padding: 0 0.5rem;
 }
 
-.menu-container {
+#menu__container {
   color: white;
   display: none;
   height: 100vh;
 }
 
-.menu-container a {
+#menu__container a {
   display: block;
   font-size: 2rem;
   font-weight: 500;
@@ -60,7 +60,7 @@ a:hover {
   border-bottom: 0.1rem solid var(--color-quarterly);
 }
 
-.menu-container a:first-of-type {
+#menu__container a:first-of-type {
   border-top: 0.1rem solid var(--color-quarterly);
 }
 
@@ -111,4 +111,31 @@ section {
   background-color: var(--color-secondary);
   background-image: url(./img/hero_bg.jpg);
   border-radius: 15px;
+}
+
+/*Media queries
+>The project is optimized for two media breakpoints
+>Small screens 0 - 640
+>large screens 641 and larger
+*/
+
+@media screen and (min-width: 641px) {
+  #menu-icon {
+    display: none;
+  }
+  #menu__container {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #menu__container a {
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: none;
+  }
+  #menu__container a:first-of-type {
+    border-top: none;
+  }
 }

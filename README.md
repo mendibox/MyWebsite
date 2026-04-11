@@ -16,6 +16,7 @@ This is a "work in progress" project and I will be modifying it through my journ
 - Pseudo-selectors
 - Global selector
 - Pseudo-elements
+- Custom properties
 ### Other
 - Git
 - Linux shell
