@@ -15,13 +15,13 @@ This is a "work in progress" project and I will be modifying it through my journ
 - Class selectors
 - Pseudo-selectors
 - Global selector
-- pseudo-elements
-
-### Markdown 
+- Pseudo-elements
+### Other
 - Git
 - Linux shell
 - Visual Studio Code
 - Google Chrome browser
+- Markdown
 
 ## Learning resources
 - W3Schools
