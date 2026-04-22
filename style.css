@@ -19,6 +19,10 @@ body {
   color: white;
 }
 
+.body-overflow-hidden {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -46,13 +50,13 @@ a:hover {
   padding: 0 0.5rem;
 }
 
-#menu__container {
+.menu__container {
   color: white;
   display: none;
   height: 100vh;
 }
 
-#menu__container a {
+.menu__container a {
   display: block;
   font-size: 2rem;
   font-weight: 500;
@@ -60,8 +64,12 @@ a:hover {
   border-bottom: 0.1rem solid var(--color-quarterly);
 }
 
-#menu__container a:first-of-type {
+.menu__container a:first-of-type {
   border-top: 0.1rem solid var(--color-quarterly);
+}
+
+.menu__container-active {
+  display: block;
 }
 
 /*Main container*/
@@ -116,26 +124,26 @@ section {
 /*Media queries
 >The project is optimized for two media breakpoints
 >Small screens 0 - 640
->large screens 641 and larger
+>large screens 641 and more
 */
 
 @media screen and (min-width: 641px) {
   #menu-icon {
     display: none;
   }
-  #menu__container {
+  .menu__container {
     height: fit-content;
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
-  #menu__container a {
+  .menu__container a {
     display: inline;
     font-size: 1.5rem;
     font-weight: 600;
     border-bottom: none;
   }
-  #menu__container a:first-of-type {
+  .menu__container a:first-of-type {
     border-top: none;
   }
 }
