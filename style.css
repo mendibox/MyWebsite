@@ -73,20 +73,39 @@ a:hover {
 }
 
 /*Main container*/
-
-.main-container {
-  margin-top: 64px;
-  margin-bottom: 800px;
-  padding: 0 1rem;
-}
-
 /*Sections*/
 
 section {
-  padding: 2rem 0;
+  padding: 1rem;
 }
 
 /*About section*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+}
+
+.information {
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+
+.information__hero {
+  margin: -60px auto 0 auto;
+}
+
+.information__hero > img{
+  width: 120px;
+  border-radius: 50%;
+}
+
+.information__location > p {
+  display: inline;
+}
 
 .first-message {
   font-size: 1.5rem;
